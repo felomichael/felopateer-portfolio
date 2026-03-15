@@ -1,162 +1,176 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>Felopateer Michael Nagy</title>
+<title>Felopateer Michael Nagy | AI Engineer</title>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2/dist/tailwind.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script src="https://unpkg.com/framer-motion/dist/framer-motion.js"></script>
 
 <style>
 
 body{
 scroll-behavior:smooth;
+background:#0f172a;
+color:white;
+font-family:sans-serif;
 }
 
 .hero{
 height:100vh;
-background:linear-gradient(135deg,#111,#1f2937);
-color:white;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
+background:radial-gradient(circle at top,#1e293b,#020617);
 }
 
-.project-card{
+.glow{
+text-shadow:0 0 20px #38bdf8;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
 transition:0.4s;
 }
 
-.project-card:hover{
-transform:scale(1.05);
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 20px 40px rgba(0,0,0,0.5);
 }
 
 </style>
 
 </head>
 
-<body class="bg-gray-100">
+<body>
 
-<!-- NAVBAR -->
-
-<nav class="bg-gray-900 text-white p-4 flex justify-between">
+<nav class="fixed w-full bg-black bg-opacity-40 backdrop-blur p-4 flex justify-between">
 
 <h1 class="font-bold text-xl">
-Felopateer Michael
+Felopateer AI
 </h1>
 
-<div class="space-x-4">
+<div class="space-x-6">
 
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
+<a href="#about">About</a> <a href="#projects">Projects</a> <a href="#skills">Skills</a> <a href="#blog">Blog</a> <a href="#contact">Contact</a>
 
 </div>
 
 </nav>
 
-<!-- HERO -->
-
 <section class="hero">
 
 <div>
 
-<h1 class="text-5xl font-bold mb-6">
-Building AI Systems That Transform Education and Accessibility
+<h1 class="text-6xl font-bold glow">
+Building AI Systems That Transform Education
 </h1>
 
-<p class="text-xl mb-8">
+<p class="mt-6 text-xl text-gray-300">
 AI Developer | IT Student | AI Ambassador
 </p>
 
-<a href="#projects" class="bg-blue-500 px-6 py-3 rounded">
+<div class="mt-10 space-x-6">
+
+<a href="#projects" class="bg-blue-600 px-6 py-3 rounded-lg">
 View Projects
+</a>
+
+<a href="#contact" class="border px-6 py-3 rounded-lg">
+Contact Me
 </a>
 
 </div>
 
+</div>
+
 </section>
 
-<!-- ABOUT -->
+<section id="about" class="py-24 max-w-4xl mx-auto">
 
-<section id="about" class="p-16 max-w-5xl mx-auto">
+<h2 class="text-4xl font-bold mb-8">
+About Me
+</h2>
 
-<h2 class="text-4xl font-bold mb-6">About Me</h2>
-
-<p class="text-lg">
+<p class="text-lg text-gray-300">
 
 Felopateer Michael Nagy is an Information Technology student specializing in
 Networks and Security.
 
-He is an Artificial Intelligence and Digital Transformation Ambassador
-certified by the Ministry of Communications and Information Technology.
+He is an Artificial Intelligence and Digital Transformation Ambassador certified
+by the Ministry of Communications and Information Technology and Engineers for Sustainable Egypt.
 
-Felopateer created one of the first AI assistants in 2020 designed
-to help blind, deaf, and mute individuals access computers.
+He created one of the earliest AI assistants in 2020 designed to help blind,
+deaf, and mute individuals access computers and the internet.
 
-He works on AI systems, automation tools, educational platforms,
-and Moodle-based learning systems.
+He works on AI systems, educational technology platforms,
+automation tools, and Moodle-based learning systems.
 
 </p>
 
 </section>
 
-<!-- PROJECTS -->
+<section id="projects" class="py-24 bg-slate-900">
 
-<section id="projects" class="bg-gray-200 p-16">
+<h2 class="text-4xl font-bold text-center mb-12">
+Projects
+</h2>
 
-<h2 class="text-4xl font-bold mb-10 text-center">Projects</h2>
+<div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
 
-<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<div class="card">
 
-<div class="project-card bg-white p-6 rounded shadow">
-
-<h3 class="font-bold text-xl mb-2">
-AI Assistant for Accessibility
+<h3 class="text-xl font-bold mb-3">
+AI Accessibility Assistant
 </h3>
 
 <p>
-AI assistant designed to help blind and deaf users use computers.
+AI assistant helping blind and deaf users interact with computers.
 </p>
 
-<p class="text-sm mt-3 text-gray-500">
-Python • AI • Voice Recognition
+<p class="text-sm mt-4 text-gray-400">
+Python • AI • Speech Recognition
 </p>
 
 </div>
 
-<div class="project-card bg-white p-6 rounded shadow">
+<div class="card">
 
-<h3 class="font-bold text-xl mb-2">
-Educational AI Platform
+<h3 class="text-xl font-bold mb-3">
+AI Educational Platform
 </h3>
 
 <p>
-AI system to help automate educational content.
+AI system that personalizes learning experiences.
 </p>
 
-<p class="text-sm mt-3 text-gray-500">
-AI • EdTech • Automation
+<p class="text-sm mt-4 text-gray-400">
+Machine Learning • EdTech
 </p>
 
 </div>
 
-<div class="project-card bg-white p-6 rounded shadow">
+<div class="card">
 
-<h3 class="font-bold text-xl mb-2">
-Moodle LMS Automation
+<h3 class="text-xl font-bold mb-3">
+Moodle Automation
 </h3>
 
 <p>
-Automation tools for Moodle learning systems.
+Automation tools for Moodle learning management systems.
 </p>
 
-<p class="text-sm mt-3 text-gray-500">
-Moodle • Automation • APIs
+<p class="text-sm mt-4 text-gray-400">
+Moodle • APIs • Automation
 </p>
 
 </div>
@@ -165,42 +179,92 @@ Moodle • Automation • APIs
 
 </section>
 
-<!-- SKILLS -->
+<section id="skills" class="py-24 max-w-5xl mx-auto">
 
-<section id="skills" class="p-16 max-w-5xl mx-auto">
+<h2 class="text-4xl font-bold mb-12">
+Skills
+</h2>
 
-<h2 class="text-4xl font-bold mb-8">Skills</h2>
+<div class="grid md:grid-cols-3 gap-6">
 
-<div class="grid md:grid-cols-3 gap-4">
-
-<div class="bg-gray-200 p-4 rounded">Artificial Intelligence</div>
-<div class="bg-gray-200 p-4 rounded">Machine Learning</div>
-<div class="bg-gray-200 p-4 rounded">Python Development</div>
-<div class="bg-gray-200 p-4 rounded">Automation Systems</div>
-<div class="bg-gray-200 p-4 rounded">Educational Technology</div>
-<div class="bg-gray-200 p-4 rounded">Moodle LMS Development</div>
-<div class="bg-gray-200 p-4 rounded">AI Chatbots</div>
-<div class="bg-gray-200 p-4 rounded">Digital Transformation</div>
-<div class="bg-gray-200 p-4 rounded">Networking</div>
+<div class="card">Artificial Intelligence</div>
+<div class="card">Machine Learning</div>
+<div class="card">Python Development</div>
+<div class="card">Automation Systems</div>
+<div class="card">Educational Technology</div>
+<div class="card">Moodle LMS Development</div>
+<div class="card">AI Chatbots</div>
+<div class="card">Digital Transformation</div>
+<div class="card">Networking Fundamentals</div>
 
 </div>
 
 </section>
 
-<!-- CONTACT -->
+<section id="blog" class="py-24 bg-slate-900">
 
-<section id="contact" class="bg-gray-900 text-white p-16 text-center">
+<h2 class="text-4xl text-center font-bold mb-12">
+Articles
+</h2>
 
-<h2 class="text-4xl mb-6">Contact</h2>
+<div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
 
-<p>Email: your@email.com</p>
+<div class="card">
 
-<p class="mt-2">
-LinkedIn | GitHub
+<h3 class="font-bold text-xl mb-3">
+AI in Education
+</h3>
+
+<p>
+How artificial intelligence will transform learning.
 </p>
 
+</div>
+
+<div class="card">
+
+<h3 class="font-bold text-xl mb-3">
+Accessibility with AI
+</h3>
+
+<p>
+Building AI tools for people with disabilities.
+</p>
+
+</div>
+
+</div>
+
 </section>
+
+<section id="contact" class="py-24 text-center">
+
+<h2 class="text-4xl font-bold mb-8">
+Contact
+</h2>
+
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="max-w-xl mx-auto">
+
+<input name="name" placeholder="Name" class="w-full p-3 mb-4 text-black">
+
+<input name="email" placeholder="Email" class="w-full p-3 mb-4 text-black">
+
+<textarea name="message" placeholder="Message" class="w-full p-3 mb-4 text-black"></textarea>
+
+<button class="bg-blue-600 px-6 py-3 rounded">
+Send Message
+</button>
+
+</form>
+
+</section>
+
+<footer class="text-center py-10 text-gray-500">
+
+© 2026 Felopateer Michael Nagy
+
+</footer>
 
 </body>
-
 </html>
+
